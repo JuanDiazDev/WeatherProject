@@ -23,7 +23,7 @@ class City:
     # Solicita a OWM API el informe del clima
     @staticmethod
     def request_weather(dic, name):
-        owm = pyowm.OWM('4f35f6733973b80abe4d8a18ded3a52e')
+        owm = pyowm.OWM('Your_API_key')
         mgr = owm.weather_manager()
         try:
             weather_report = mgr.weather_at_place(name).weather
